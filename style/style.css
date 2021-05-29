@@ -1,0 +1,112 @@
+/*Declaração de Variáveis, cores principais*/
+:root {
+    --amarelho:#ebc000; 
+    --branco: #f3f3f3;
+}
+
+/*Removendo todo padding e margin do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estrutura Básica*/
+body {
+    background: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--amarelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:black;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#ebc000;
+}
+
+/*Banner Principal*/
+.filme-principal {
+    font-size: 15px;
+    background: url('/imagens/principal-nicolas.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:black;
+}
+
+.filme-principal .descricao {
+   margin-top: 10px;
+    margin-bottom:40px;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+    margin-top: 15%;
+}
+
+.botao {
+    background-color:rgba(0, 0, 0,.50);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color:black;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+}
+
+
+/* Barra de Rolagem */
+
+
+/* Background da Barra de Rolagem */
+::-webkit-scrollbar-track {
+    background-color:var(--branco);
+}
+/* Aqui vai as espessuras da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Cor da Barra de Rolagem */
+::-webkit-scrollbar-thumb {
+    background: var(--amarelho);
+}
